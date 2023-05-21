@@ -102,7 +102,7 @@ body {
   border-radius: 16px 16px 0 0;
   margin: 0.1px;
 }
-[asd] {
+#asd {
   position: fixed;
   bottom: 0;
   width: 99%;
@@ -114,13 +114,22 @@ body {
   -webkit-backdrop-filter: blur(4.7px);
   border: 1px solid rgba(255, 255, 255, 0.12);
   width: 45%;
-  border-radius: 16px 0 16px 16px;
+  margin-top: 16px;
   padding: 1rem 0.7rem;
+  animation: appear 0.3s ease;
+}
+.user-msg {
+  align-self: flex-end;
   float: right;
   margin-right: 16px;
-  margin-top: 16px;
-  animation: appear 0.3s ease;
-  align-self: flex-end;
+  border-radius: 16px 0 16px 16px;
+}
+
+.bot-msg {
+  float: left;
+  align-self: flex-start;
+  margin-left: 16px;
+  border-radius: 0 16px 16px 16px;
 }
 @keyframes appear {
   0% {
